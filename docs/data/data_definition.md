@@ -2,7 +2,7 @@
 
 ## Origen de los datos
 
-- [ ] Especificar la fuente de los datos y la forma en que se obtuvieron. 
+- El dataset fue obtenido de la plataforma "Kaggle" y es una recopilación de mensajes de twitter que están asociados a variables como un id, fecha de publicación, puntaje y variables de clasificación de toxicidad. Este dataset se encuentra como parte de una competición donde se busca crear un modelo de machine learning que pueda predecir cuales Tweets son verdaderos "desastres" y cuales no lo son. La creación del dataset no es muy clara ya que en kaggle se referencia una pagina web que ya no está en funcionamiento.
 
 ## Especificación de los scripts para la carga de datos
 
