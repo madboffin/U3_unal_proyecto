@@ -3,12 +3,15 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
+authors = [
+    { name = "manuel huertas", email = "manuelhuertasfl@gmail.com" },
+    { name = "nombre_autor", email = "correo@correo.com" },
+]
 name = "nombre_paquete"
 version = "0.1.0"
-authors = [{ name = "autor1", email = "correo@correo.com" }]
 description = "Descripción del proyecto"
 requires-python = ">3.8"
-dependencies = ["numpy", "pandas", "gdown"]
+dependencies = ["gdown", "numpy", "pandas"]
 
 [tool.setuptools.packages.find]
-where = ["src/"]
+where = ["src"]
