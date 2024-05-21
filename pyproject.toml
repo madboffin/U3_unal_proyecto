@@ -6,13 +6,22 @@ build-backend = "setuptools.build_meta"
 authors = [
     { name = "manuel huertas", email = "manuelhuertasfl@gmail.com" },
     { name = "david cristancho", email = "dcristancho@unal.edu.co" },
-    { name = "nombre_autor", email = "correo@correo.com" }
+    { name = "nombre_autor", email = "correo@correo.com" },
 ]
 name = "nombre_paquete"
 version = "0.1.0"
 description = "Descripción del proyecto"
 requires-python = ">3.8"
-dependencies = ["gdown", "numpy", "pandas"]
+dependencies = [
+    "dvc",
+    "gdown",
+    "mlflow",
+    "numpy",
+    "pandas",
+    "seaborn",
+    "spacy",
+    "unidecode",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
