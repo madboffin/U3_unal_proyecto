@@ -1,8 +1,8 @@
-import load_data
+from load_data import load_data
 
 
 def main():
-    load_data.load_data(download_data=True)
+    load_data(download_data=True)
 
 
 if __name__ == "__main__":
