@@ -1,0 +1,5 @@
+outs:
+- md5: c46ef7f762d698070831e4ed8026d61b
+  size: 325411180
+  hash: md5
+  path: jigsaw_data.zip
