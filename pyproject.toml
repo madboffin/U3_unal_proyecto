@@ -21,6 +21,7 @@ dependencies = [
     "seaborn",
     "spacy",
     "unidecode",
+    "wordcloud",
 ]
 
 [tool.setuptools.packages.find]
