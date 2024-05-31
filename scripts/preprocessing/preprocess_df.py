@@ -26,6 +26,7 @@ def preprocess_df(df: pd.DataFrame, to_numeric_col: list[str]) -> pd.DataFrame:
     df = tf_to_numeric(df, to_numeric_col)
     df["len_text"] = df["comment_text"].str.len()
     df["created_date"] = pd.to_datetime(df["created_date"].str.slice(0, 10))
+    df["class"] = df["toxicity"].round().astype(int)
     return df
 
 

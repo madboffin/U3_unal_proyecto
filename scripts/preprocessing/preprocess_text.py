@@ -43,6 +43,13 @@ def remove_doublespaces(text: str):
     return " ".join(text.split())
 
 
+def get_spacy_doc(list_text: Iterable):
+    """Get doc from list of texts"""
+    nlp = spacy.load("en_core_web_sm")
+    dis_pipes = ["ner", "parser", "tagger", "attribute_ruler", "lemmatizer"]
+    return list(nlp.pipe(list_text, disable=dis_pipes))
+
+
 def preprocess_text(doc, lemma: bool = False) -> Iterable:
     """Preprocess text"""
     doc_filter = filter_stopwords_and_len(doc, 3)
