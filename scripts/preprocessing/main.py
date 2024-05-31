@@ -1,7 +1,6 @@
 import preprocess_df as ppd
 import preprocess_text as ppt
 import pandas as pd
-from pathlib import Path
 
 
 def main():
