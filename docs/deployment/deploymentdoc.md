@@ -41,15 +41,15 @@ python docs/deployment/deploy.py
 - **Instrucciones de uso:** python manage.py runserver
 - **Instrucciones de mantenimiento:** 
 1. Actualizar el Código:
-    git pull origin main
+        git pull origin main
 
 2. Actualizar Dependencias:
-    pip install -r requirements.txt
+        pip install -r requirements.txt
     
 3. Realizar Migraciones de Base de Datos
-    python manage.py migrate
+        python manage.py migrate
 
 4. Reiniciar el Servidor
-    sudo systemctl restart nginx
-    sudo systemctl restart gunicorn
+        sudo systemctl restart nginx
+        sudo systemctl restart gunicorn
 
