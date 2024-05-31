@@ -3,10 +3,10 @@
 ## Infraestructura
 
 - **Nombre del modelo:** Modelo de Clasificación de Toxicidad
-- **Plataforma de despliegue:** Servidor local o máquina virtual con Ubuntu 18.04 o superior
+- **Plataforma de despliegue:** Servidor local útilizando nginx con HTTP
 - **Requisitos técnicos:** 
     - Python 3.8+
-    - Sistema operativo: Ubuntu 18.04 o superior
+    - Nginx
     - Git
     - Pip
 
