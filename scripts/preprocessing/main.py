@@ -12,11 +12,19 @@ def main():
     df = ppd.preprocess_df(df, ["toxicity"])
     df.to_parquet(output_file, index=False, compression="gzip")
 
+    useful_cols = [
+        "comment_text",
+        "split",
+        "toxicity",
+        "class",
+        "comment_vec",
+        "comment_text_prep",
+    ]
     sampled = ppd.sample_with_quota(df, n_by_quota=5_000)
     sampled["comment_doc"] = ppt.get_spacy_doc(sampled["comment_text"])
     sampled["comment_vec"] = sampled["comment_doc"].apply(lambda x: x.vector)
     sampled["comment_text_prep"] = sampled["comment_doc"].apply(ppt.preprocess_text)
-    sampled = sampled.drop(columns=["comment_doc"])
+    sampled = sampled[useful_cols]
     sampled.to_parquet(output_file_sampled, index=False, compression="gzip")
 
 
