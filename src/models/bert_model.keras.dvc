@@ -1,0 +1,5 @@
+outs:
+- md5: 6ccfe96429b42d9f133a7b05e2ff64bf
+  size: 1300359990
+  hash: md5
+  path: bert_model.keras
